@@ -40,6 +40,7 @@ import * as Log from "../../libs/Log"
 import getString from "../../translations/index";
 import * as etherutils from '../../libs/etherutils';
 import {formatTransactionBalance} from "../common/wallet_utils/wallet_utils";
+import {getTransactionToAddress} from "../common/wallet_utils/wallet_utils";
 import * as Constant from "../../libs/constant"
 
 const datas = [
@@ -163,7 +164,7 @@ export default class Assets_coinaction extends Component {
                         color: 'rgba(0,0,0,0.45)',
                         fontSize: 15,
                         width: deviceWidth * 0.45
-                    }}> {rowData.from.toLowerCase() == wallet.address.toLowerCase() ? etherutils.toChecksumAddress(rowData.type != Constant.TRANSACTION_TYPE_CONTRACT ? rowData.to : rowData.extra.to) : etherutils.toChecksumAddress(rowData.from)} </Text>
+                    }}> {rowData.from.toLowerCase() == wallet.address.toLowerCase() ? etherutils.toChecksumAddress(getTransactionToAddress(rowData)) : etherutils.toChecksumAddress(rowData.from)} </Text>
                     <Text style={{
                         textAlign: 'left',
                         fontSize: 13,
@@ -269,7 +270,7 @@ export default class Assets_coinaction extends Component {
     render() {
         var wallet = this.props.wallet.cur_wallet;
         var transaction = this.props.transaction;
-        Log.log("+++++++++++++++++++++++++++++++++++++render lihongguo");
+        Log.log("+++++++++++++++++++++++++++++++++++++render");
         var params = this.props.navigation.state.params
         var title = params.title;
         var amount = params.amount;

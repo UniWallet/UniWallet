@@ -5,6 +5,8 @@ import Global from "../components/common/Global";
 import getString from "../translations/index";
 import * as types from '../redux/constants/ActionTypes';
 import I18n, { getLanguages } from 'react-native-i18n';
+import * as messageConst from '../redux/constants/Message';
+import * as Constant from "./constant"
 
 export const getDateFromUnix = (timestamp, dataFormat) => {
     if(!timestamp) {
@@ -71,6 +73,21 @@ exports.getTokenUnitFromAddress = function getTokenUnitFromAddress(address) {
     }
     return result;
 }
+
+exports.isSupport = function isSupport(msg) {
+    if (msg.type == messageConst.TYPE_NEWTRANSACTION) {
+        let transaction = msg.data;
+        if (transaction && transaction.to) {
+            let isToken = transaction.type == Constant.TRANSACTION_TYPE_CONTRACT;;
+            let tokenInfo = getTokenUnitFromAddress(transaction.to)
+            if (isToken&&!isTokenInfo(tokenInfo)) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 
 exports.isTokenInfo = function(token_info) {
     return token_info && token_info.address !== Global.ETH_ADDRESS;

@@ -129,28 +129,30 @@ class MessageManager {
     }
 
     addMessage({msg, resolved, rejected}) {
-        if (this.actions) {
-            this.actions.addMessage({
-                msg:msg,
-                resolved,
-                rejected,
-            })
-        } else {
-            this._addMessageInBg(msg).then(
-                resolved,
-                rejected,
-            )
-        }
+        if(utils.isSupport(msg)){
+            if (this.actions) {
+                this.actions.addMessage({
+                    msg:msg,
+                    resolved,
+                    rejected,
+                })
+            } else {
+                this._addMessageInBg(msg).then(
+                    resolved,
+                    rejected,
+                )
+            }
 
-        /*
-            if message is tranaction, check token should be added or not
-         */
-        if (msg.type == messageConst.TYPE_NEWTRANSACTION) {
-            let transaction = msg.data;
-            if (transaction && transaction.to) {
-                let tokenInfo = utils.getTokenUnitFromAddress(transaction.to)
-                if (utils.isTokenInfo(tokenInfo)) {
-                    utils.pushPendingAction(this.actions, types.PENDING_TOKEN_ADD, {address: transaction.extra.to, token_address: transaction.to});
+            /*
+                if message is tranaction, check token should be added or not
+             */
+            if (msg.type == messageConst.TYPE_NEWTRANSACTION) {
+                let transaction = msg.data;
+                if (transaction && transaction.to) {
+                    let tokenInfo = utils.getTokenUnitFromAddress(transaction.to)
+                    if (utils.isTokenInfo(tokenInfo)) {
+                        utils.pushPendingAction(this.actions, types.PENDING_TOKEN_ADD, {address: transaction.extra.to, token_address: transaction.to});
+                    }
                 }
             }
         }

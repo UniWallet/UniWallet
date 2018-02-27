@@ -200,6 +200,7 @@
   "transaction_status_unknown":"未知",
   "transaction_status_fail_out_of_gas":"油费不足",
   "transaction_status_fail_pending_timeout":"超时",
+  "transaction_status_fail_error":"出错",
 
   //Transaction time
   "before_days":"天前",

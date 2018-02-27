@@ -3,7 +3,7 @@ import * as Log from "../../libs/Log"
 import * as etherutils from "../../libs/etherutils"
 import {isConfirmedTransaction} from "../../libs/utils";
 import * as Constant from "../../libs/constant"
-
+import Global from "../../components/common/Global"
 /*
 web3.eth.getTransaction():
     {
@@ -202,10 +202,31 @@ export default function (state = initialState, action) {
                 Log.log("Empty transaction list");
                 return state;
             }
-            state.confirmed_transactions = {};
-            state.unconfirmed_transactions = {};
-
             let address = payload.address;
+            let token = payload.token;
+            if(token==null||typeof(token) =='undefined'){
+                state.confirmed_transactions[address] = [];
+                state.unconfirmed_transactions[address] = [];
+            }else {
+                let isToken = Global.ETH_ADDRESS!==token;
+                let confirm_transaction = state.confirmed_transactions[address];
+                let unconfirm_transaction = state.unconfirmed_transactions[address];
+                let new_confirm_transaction = []
+                let new_unconfirmed_transactions = []
+                if(confirm_transaction){
+                    new_confirm_transaction = confirm_transaction.filter((item) => {
+                        return isToken? item.to != token : item.type == Constant.TRANSACTION_TYPE_CONTRACT;
+                    });
+                }
+                if(unconfirm_transaction){
+                    new_unconfirmed_transactions = unconfirm_transaction.filter((item) => {
+                        return isToken? item.to != token : item.type == Constant.TRANSACTION_TYPE_CONTRACT;
+                    });
+                }
+                state.confirmed_transactions[address] = new_confirm_transaction;
+                state.unconfirmed_transactions[address] = new_unconfirmed_transactions;
+
+            }
             let transactions = payload.transactions;
             if (address && transactions) {
                 transactions.forEach(transaction => {

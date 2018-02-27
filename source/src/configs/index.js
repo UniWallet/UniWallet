@@ -10,7 +10,7 @@ const devConfig = {
 };
 
 const prodConfig = {
-    release:false,
+    release:true,
     apiUrl: 'http://api.yiya.io',
     web3Url: 'http://web3.yiya.io',
     exploreUrl:'https://etherscan.io/tx/',

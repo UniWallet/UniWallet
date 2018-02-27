@@ -25,6 +25,7 @@ import Global from "../common/Global"
 import LoadMoreFooter from "../common/LoadMoreFooter"
 import getString from "../../translations/index";
 import {formatTransactionBalance} from "../common/wallet_utils/wallet_utils";
+import {getTransactionToAddress} from "../common/wallet_utils/wallet_utils";
 import * as etherutils from '../../libs/etherutils';
 import * as Constant from "../../libs/constant"
 import * as Log from "../../libs/Log"
@@ -192,7 +193,7 @@ class TransactHistory extends Component {
             <View style={styles.transaction}>
                 <Image source={status.error==1?Global.getImage("icon_asset_failed"):(Global.getImage(rowData.from.toLowerCase() == wallet.address.toLowerCase()?"icon_transfer_small":"icon_receipt_small"))} style={styles.transactionicon}/>
                 <View style={{flexDirection:"column", justifyContent:"flex-start",alignItems:"flex-start",paddingLeft: 10}}>
-                    <Text numberOfLines={1} ellipsizeMode={'middle'} style={{textAlign: 'left', color:'rgba(0,0,0,0.45)',fontSize:15, width: deviceWidth*0.45}}> {rowData.from.toLowerCase() == wallet.address.toLowerCase()?etherutils.toChecksumAddress(rowData.type != Constant.TRANSACTION_TYPE_CONTRACT ? rowData.to : rowData.extra.to):etherutils.toChecksumAddress(rowData.from)} </Text>
+                    <Text numberOfLines={1} ellipsizeMode={'middle'} style={{textAlign: 'left', color:'rgba(0,0,0,0.45)',fontSize:15, width: deviceWidth*0.45}}> {rowData.from.toLowerCase() == wallet.address.toLowerCase()?etherutils.toChecksumAddress(getTransactionToAddress(rowData)):etherutils.toChecksumAddress(rowData.from)} </Text>
                     <Text style={{textAlign: 'left', fontSize:13, width: deviceWidth*0.45,marginTop:10, color:'rgba(0,0,0,0.45)', paddingLeft: 4}}>
                         {this.getDate(rowData.timestamp)}
                     </Text>

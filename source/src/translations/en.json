@@ -199,6 +199,7 @@
   "transaction_status_unknown":"unknown",
   "transaction_status_fail_out_of_gas":"Out of gas",
   "transaction_status_fail_pending_timeout":"Timeout",
+  "transaction_status_fail_error":"Fail",
 
   //Transaction time
   "before_days":" days ago",

@@ -30,6 +30,7 @@ import * as etherutils from '../../libs/etherutils';
 import {getDateFromUnix} from "../../libs/utils";
 import * as Log from "../../libs/Log"
 import {formatTransactionBalance} from "../common/wallet_utils/wallet_utils";
+import {getTransactionToAddress} from "../common/wallet_utils/wallet_utils";
 
 const deviceHeight = Dimensions.get("window").height;
 
@@ -69,9 +70,9 @@ class MessageList extends Component {
 
     _generateMessageContent(msg) {
         if (msg.type == messageConst.TYPE_NEWTRANSACTION) {
-            return getString("receiver")  + " : " +  msg.data.from;
+            return getString("sender")  + " : " +  msg.data.from;
         } else if (msg.type == messageConst.TYPE_CONFIRMTRANSACTION) {
-            return   getString("sender") + " : " + msg.data.to;
+            return   getString("receiver") + " : " + getTransactionToAddress(msg.data);
         } else {
             //TODO:
             return ""+msg.description;

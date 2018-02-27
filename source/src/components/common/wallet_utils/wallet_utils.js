@@ -94,6 +94,17 @@ export function formatTransactionBalance(transaction, count) {
     return formatBalance(value, count);
 }
 
+export function getTransactionToAddress(transaction) {
+    if (!transaction) {
+        return null;
+    }
+    let address = transaction.to
+    if (transaction.type == Constant.TRANSACTION_TYPE_CONTRACT) {
+        address = transaction.extra.to;
+    }
+    return address;
+}
+
 function _updateTokenToAndValue(transaction) {
     try {
         method = transaction.extra.method;
@@ -119,7 +130,11 @@ exports.getTransactionStatus = function getTransactionStatus(trans) {
             if (trans.status == 0) {
                 error = 1;
                 if (confirmed > 0) {
-                    status = getString("transaction_status_fail_out_of_gas");
+                    if (trans.gas == trans.gasUsed) {
+                        status = getString("transaction_status_fail_out_of_gas");
+                    } else {
+                        status = getString("transaction_status_fail_error");
+                    }
                 } else {
                     status = getString("transaction_status_fail_pending_timeout");
                 }
@@ -139,7 +154,11 @@ exports.getTransactionStatus = function getTransactionStatus(trans) {
                     if (confirmed < 12) {
                         status = getString("transaction_status_waiting_confirm");
                     } else {
-                        status = getString("transaction_status_success");
+                        if (trans.gas == trans.gasUsed) {
+                            status = getString("transaction_status_fail_out_of_gas");
+                        } else {
+                            status = getString("transaction_status_success");
+                        }
                     }
                 }
             }
@@ -184,6 +203,10 @@ exports.getTransaction = function getTransaction(trans, address, token_address=n
             let transaction = all_trans_temp[i];
             if (transaction && transaction.to) {
                 let token_info = utils.getTokenUnitFromAddress(transaction.to.toLowerCase());
+                let isToken = transaction.type == Constant.TRANSACTION_TYPE_CONTRACT;
+                if (isToken&&!utils.isTokenInfo(token_info)) {
+                    continue;
+                }
                 if (!token_address || (token_info && token_address && token_info.address.toLowerCase() == token_address.toLowerCase())) {
                     all_trans = all_trans.concat(
                         [{

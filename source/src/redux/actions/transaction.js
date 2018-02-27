@@ -169,6 +169,7 @@ export const getTransactionList = createAction(types.GET_TRANSACTION_LIST, async
 export const updateTransactionList = createAction(types.UPDATE_TRANSACTION_LIST, async ({address, count, token}) => {
     return {
         address: address,
+        token: token,
         transactions: await transactionService.getTransactionList(address, count, 0, token)
     };
 }, ({resolved, rejected, loading})=> {
