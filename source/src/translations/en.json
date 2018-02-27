@@ -1,0 +1,304 @@
+{
+  /* create wallet */
+  "create_wallet":"Create Wallet",
+  "import_wallet":"Import Wallet",
+  "create_wallet_name":"Name",
+  "create_wallet_passwd":"Password",
+  "create_wallet_passwd2":"Repeat Password",
+  "create_wallet_passwdtip":"Password Tips(Optional)",
+  "create_wallet_button_create":"Create",
+  "create_wallet_button_import":"Import",
+  "create_wallet_name_warning":"Wallet name must not be empty",
+  "create_wallet_pwd_warning":"Password length must be at least 8 characters",
+  "create_wallet_in_progress":"Creating...",
+
+  /* sidebar */
+  "sidebar_my_receipt_code":"Receive QR",
+  "sidebar_scan":"Scan QR",
+
+  /* scan */
+  "scan_title":"Scan",
+
+  /* wallet is created successfully */
+  "create_wallet_success_title":"Wallet Create",
+  "create_wallet_success":"A new wallet is created",
+  "create_wallet_please_backup":"Please backup your wallet before using it",
+  "create_wallet_button_backup":"Backup Wallet",
+  "create_wallet_button_ignore":"Enter Now",
+  "backup_ok_hint":"The wallet is backuped",
+  "backup_fail_hint":"Backup operation failed",
+  "create_wallet_button_howtobackup":"How to backup wallet?",
+  "how_to_backup_title":"Backup Wallet",
+
+  /* wallet backup */
+  "backup_wallet_name":"Name",
+  "backup_wallet_button_tokeystore":"Backup Keystore",
+  "backup":"Backup",
+  "backup_hint":"Backup",
+  "keystore":"Keystore",
+  "hint_wallet_backup":"Attention! UniWallet does not keep user password so there is no way to reset or restore it. Password must be backed up by yourself. Password strength is critical to gurad your wallet.",
+  "hint_wallet_backup_after_create":"UniWallet strongly recommends that you should backup keystore before you use your wallet to transfer assets.",
+  "backup_wallet_button_delete":"Delete Wallet",
+  "backup_wallet_password_wrong":"Wrong password",
+  "wallet_name_already_exist":"The name of the wallet has already existed, please reenter it",
+
+  /* unlock */
+  "unlock_cache_off":"Disable password cache",
+  "unlock_cache_on":"Enable password cache",
+  "unlock_input_password":"Please input password",
+  "unlock_password_isempty":"Password cannot be empty",
+  "unlock_rpassword_isempty":"Repeated password cannot be empty",
+  "different_pwd":"Inconsistent password is detected",
+
+  /* assets */
+  "assets_total":"Total Amount",
+  "assets_tab_assets": "Assets",
+  "assets_tab_market": "Market",
+  "assets_tab_find": "Find",
+  "assets_tab_me": "Me",
+
+  /* new assets */
+  "newassets_title":"Add New Token",
+
+  /* assets_action */
+  "assets_action_transfer":"Send",
+  "assets_action_receive":"Receive",
+  "assets_action_receive_code":"Receive QR",
+  "assets_address_copy":"Copy Wallet Address",
+  "wallet_address_copy":"Copy Wallet Address",
+  "assets_action_records":"Transactions",
+  "assets_address_mine":"My Wallet Address",
+  "share":"Share",
+
+  /* assets transfer */
+  "assets_transfer_title":"Transfer",
+  "assets_transfer_address":"Receiving Address",
+  "assets_transfer_amount":"Amount",
+  "assets_transfer_note":"Note(Optional)",
+  "assets_transfer_cost":"Gas Fee",
+  "assets_transfer_speed_slow":"Slow",
+  "assets_transfer_speed_fast":"Fast",
+  "assets_transfer_advance_options":"Advanced Options",
+  "assets_transfer_next_action":"Next",
+  "assets_transfer_gasprice":"Gas Price",
+  "assets_transfer_gaslimit":"Gas Limit",
+  "assets_transfer_data":"Custom Data",
+  "transfer_error_fail":"Transfer fail",
+  "transfer_error_password_error":"Wrong password",
+
+  /* assets qrcode */
+  "assets_qrcode_copy_ok":"Wallet address is copied to clipboard",
+  "assets_qrcode_qrcode":"QR Code",
+  "assets_qrcode_copy_address":"Copy Wallet Address",
+
+  /* about us */
+  "about_us":"About",
+  "protocol":"Terms of Service",
+  "privacy_policy":"Privacy Policy",
+  "version_log":"Versions",
+  "new_version_check":"Check New Version",
+  "app_introduction":"UniWallet is a concise, safe and light HD blockchain wallet to manage ETH or any token following ERC-20 standard.",
+
+  /* version check */
+  "version_update":"Upgrade to the latest version",
+  "update_now":"Upgrade Now",
+  "update_later":"Later",
+  "version_now":"Current Version",
+
+  /* report */
+  "hint_may_help_you":"What can I help you?",
+  "report_problem":"Report Issue",
+  "report_advice":"Suggestion",
+
+  /* system settings */
+  "multilingual":"Multi-language",
+  "cn":"Simple Chinese",
+  "en":"English",
+  "currency_unit":"Currency",
+  "cny":"CNY",
+  "usd":"USD",
+  "web3_settings":"Web3 Settings",
+
+  /* messsage center */
+  "message_center":"Messages",
+  "system_announcement":"System Announcement",
+  "my_message":"My Message",
+  "message_details":"Message Details",
+
+  /* my info */
+  "my_account":"My Account",
+  "manage_wallet":"Wallets",
+  "transaction_records":"Transactions",
+  "contact":"Contacts",
+  "system_settings":"Settings",
+  "help_center":"Help",
+  "feed_back":"Feedback",
+  "test_center":"Test",
+
+  /* Contact */
+  "create":"Create",
+  "del":"Delete",
+  "change":"Modify",
+  "phone_number":"Phone",
+  "wallet_address":"Wallet Address",
+  "email":"Email",
+  "extra":"Note",
+  "surname":"Last Name",
+  "name":"First Name",
+  "contact_created":"A new contact is created",
+  "contact_changed":"Contact is changed",
+  "hint_wallet_address_can_not_be_empty":"Address cannot be empty",
+  "hint_name_can_not_be_empty":"First name cannot be empty",
+  "hint_surname_can_not_be_empty":"Last name cannot be empty",
+  "hint_no_contacts":"I'm empty",
+  "hint_no_records":"I'm empty",
+
+  /*manage wallet*/
+  "official_wallet":"Keystore",
+  "mnemonic_word":"Mnemonic Words",
+  "private_key":"Private Key",
+  "hint_private_key_can_not_be_empty":"Private key cannot be empty",
+  "import_wallet_ok":"A new wallet is imported",
+  "import_start":"Import",
+  "keystore_content":"Keystore",
+  "keystore_key":"Password",
+  "hint_what_is_keystore":"What's keystore?",
+  "hint_what_is_mnemonic_word":"What's mnemonic words?",
+  "hint_what_is_private_key":"What's private key?",
+  "hint_pwd":"Password hint(Optional)",
+  "hint_keystore_can_not_be_empty":"Keystore cannot be empty",
+  "hint_mnemonic_word_split_by_space":"Mnemonic words seperated by space",
+  "official_wallet_introduction":"Copy and paste keystore string here",
+
+  "dialog_default_title":"Reminder",
+  "dialog_default_content":"Are you sure you want to exit?",
+  "dialog_default_leftbutton":"Cancel",
+  "dialog_default_rightbutton":"OK",
+
+  "save":"Save",
+  "delete":"Delete",
+  "set_as_default_url":"Restore default URL",
+
+  "wallet_name_prefix":"Wallet-",
+  "wallet_generate_name_error":"Cannot find suitable wallet name",
+
+  "wallet_import_loading":"Importing...",
+  "wallet_export_loading":"Exporting...",
+  "wallet_delete_loading":"Deleting...",
+  "wallet_create_loading":"Creating...",
+  "transaction_send_loading":"Transferring...",
+
+  "cancel":"Cancel",
+  "ok":"OK",
+
+  //Transaction status
+  "transaction_status_pending":"pending",
+  "transaction_status_waiting_confirm":"confirming",
+  "transaction_status_success":"success",
+  "transaction_status_fail":"failure",
+  "transaction_status_unknown":"unknown",
+  "transaction_status_fail_out_of_gas":"Out of gas",
+  "transaction_status_fail_pending_timeout":"Timeout",
+
+  //Transaction time
+  "before_days":" days ago",
+  "before_hours":" hours ago",
+  "before_minutes":" minutes ago",
+  "before_now":" just now",
+
+  //Error
+  "error_wrong_password":"Wrong password",
+  "error_send_transaction":"Transaction fail",
+  "error_unknown":"Unknown",
+  "error_refresh":"Refresh fail",
+  "error_callservice":"Call service fail",
+  "error_open_message":"Open message fail",
+  "error_open_message_exception":"Open message fail",
+  "error_open_message_tool":"Cannot open message",
+  "error_open_message_navigation":"Cannot open message",
+  "error_open_message_data":"Message format error",
+  "error_call_service_exception":"Service exception",
+  "error_call_service_invalid":"No service",
+  "error_import_wallet_with_same_address":"The same wallet was imported",
+
+  "pwd_hint":"At least 8 characters. Better to mix letters, digitis, symbols.",
+  "pwd_weak":"Weak",
+  "pwd_common":"Normal",
+  "pwd_good":"Good",
+  "pwd_very_good":"Strong",
+  "pwd_prefect":"Perfect",
+
+  "message_type_newtransaction":"Receive a new transaction",
+  "message_type_confirmtransaction":"Transaction is confirmed",
+  "message_type_newtransaction_fail":"Receive transaction fail",
+  "message_type_confirmtransaction_fail":"Transaction fail",
+  "message_type_news":"News",
+  "message_type_system":"System Message",
+  "message_type_unknown":"Unknown",
+  "message_mark_all_read":"Read All",
+
+  "notification_content_newtransaction":"is received.",
+  "notification_content_confirmtransaction":"is sent.",
+  "receiver":"receiver",
+  "sender":"sender",
+  "transfer_notice":"Transfer Notice",
+  "receivables_notice":"Receive Notice",
+
+  "copy_url":"Copy URL",
+  "timestamp":"Timestamp",
+  "block_number":"Block number",
+  "hash":"TX Hash",
+  "gas":"Gas",
+  "to":"To",
+  "from":"From",
+  "extra":"Extra",
+
+  "agree_terms":"I agree to ",
+  "term_of_service":"terms of service",
+  "accept_terms":"Please read and agree to the relevant terms",
+  "scan_title":"Scanner",
+
+  "gas_used":"gasUsed",
+  "tx_comment_default":"Transfer",
+
+  "invalid_wallet_name":"Invalid name, 4 and 12 characters(a-z,0-9,-,_,chinese character)",
+  "invalid_num":"Invalid numeric",
+  "invalid_transfer_num":"Transfer value is not numeric",
+  "invalid_address":"Invalid address",
+  "invalid_transfer_to_self":"Can't transfer to yourself",
+  "invalid_transfer_zero":"Can't transfer negative number of asset",
+  "invalid_phone":"Invalid phone number",
+  "invalid_email":"Invalid email address",
+  "invalid_privatekey":"Invalid private key",
+  "invalid_url":"Invalid url",
+  "invalid_keystore":"Invalid keystore",
+
+  /* splash */
+  "network_error":"Network Exception",
+  "network_fail_warning":"Check network connection and restart.",
+  "button_restart":"Retry",
+  /* transaction confirm */
+  "confirm_pay_wallet":"Pay by",
+  "confirm_to_address":"Pay to",
+  "confirm_amount":"Amount",
+  /*ui左对齐，中文ok，英文title会短一些，空格需要保留*/
+  "confirm_details":"Title   ",
+  "confirm_transfer":"Transfer",
+  "confirm_payment_details":"Payment Details",
+
+  "balance_insufficient":"balance is insufficient",
+  "release_watermark":"Be care, mainnet",
+
+  /* backup dialog */
+  "backup_dialog_hint_title":"Reminder",
+  "backup_dialog_hint_content":"Please be sure to back up the wallet to a safe place, UniWallet does not assume any loss of the wallet if password is hacked or forgotten etc.",
+  "backup_dialog_hint_confirm":"OK",
+  "transaction_details":"Transaction",
+  /*load trasaction*/
+  "loading":"loading...",
+  "load_all_done":"no more data",
+  "loading_failed":"load failure, click to retry",
+
+  /* test */
+  "test_message":"test_message"
+}

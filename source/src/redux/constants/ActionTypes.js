@@ -1,0 +1,76 @@
+// utils
+export const TOAST = 'TOAST';
+export const OPEN_TOAST = 'OPEN_TOAST';
+export const CLOSE_TOAST = 'CLOSE_TOAST';
+export const OPEN_UNLOCK = 'OPEN_UNLOCK';
+export const CLOSE_UNLOCK = 'CLOSE_UNLOCK';
+export const SHOW_LOADING = 'SHOW_LOADING';
+export const HIDE_LOADING = 'HIDE_LOADING';
+export const CALL_SERVICE = 'CALL_SERVICE';
+
+//global
+export const UPDATE_GLOBAL_OBJECT = 'UPDATE_GLOBAL_OBJECT';
+
+// alias
+export const SET_ALIAS = 'SET_ALIAS';
+export const GET_ALIAS_FROM_STORAGE = 'GET_ALIAS_FROM_STORAGE';
+export const SET_ALIAS_DATA = 'SET_ALIAS_DATA';
+
+// setting
+export const GET_SETTING_FROM_STORAGE = 'GET_SETTING_FROM_STORAGE';
+export const UPDATE_SETTING = 'UPDATE_SETTING';
+
+// messageConst
+export const GET_MESSAGE_FROM_STORAGE = 'GET_MESSAGE_FROM_STORAGE';
+export const ADD_MESSAGE = 'ADD_MESSAGE';
+export const REMOVE_MESSAGE = 'REMOVE_MESSAGE';
+export const CHANGE_MESSAGE_STATUS = 'CHANGE_MESSAGE_STATUS';
+
+// wallet
+export const CREATE_WALLET = 'CREATE_WALLET';
+export const CHANGE_WALLET_NAME = 'CHANGE_WALLET_NAME';
+export const BACKUP_WALLET = 'BACKUP_WALLET';
+export const GET_WALLET_FROM_STORAGE = 'GET_WALLET_FROM_STORAGE';
+export const IMPORT_WALLET = 'IMPORT_WALLET';
+export const REMOVE_WALLET = 'REMOVE_WALLET';
+export const SWITCH_WALLET = 'SWITCH_WALLET';
+export const GET_BANLANCE = 'GET_BANLANCE';
+export const ENCRYPT_WALLET = 'ENCRYPT_WALLET';
+export const DECRYPTE_WALLET = 'DECRYPTE_WALLET';
+export const TOKEN_CONFIG = 'TOKEN_CONFIG';
+export const TOKEN_ADD = 'TOKEN_ADD';
+export const TOKEN_GET_BALANCE = 'TOKEN_GET_BALANCE';
+export const GET_ALL_BALANCE = 'GET_ALL_BALANCE';
+
+// token
+export const TOKEN_SYNC = "TOKEN_SYNC";
+export const TOKENS_SYNC = "TOKENS_SYNC";
+export const GET_TOKEN_LIST_FROM_STORAGE = 'GET_TOKEN_LIST_FROM_STORAGE';
+
+//exchange
+export const EXCHANGE_RATE_SYNC = "EXCHANGE_RATE_SYNC";
+export const GET_EXCHANGE_RATE_FROM_STORAGE = "GET_EXCHANGE_RATE_FROM_STORAGE";
+
+// transaction
+export const SEND = 'SEND';
+//New implement of send transaction, same as send
+export const SEND_TRANSACTION = 'SEND_TRANSACTION';
+export const UPDATE = 'UPDATE';
+export const START_UPDATE = 'START_UPDATE';
+export const TRANSACTION = 'TRANSACTION';
+export const GET_TX_INFO = 'GET_TX_INFO';
+export const GET_BLOCK_INFO = 'GET_BLOCK_INFO';
+export const SYNC_TX_INFO = 'SYNC_TX_INFO';
+export const GET_TRANSACTION_FROM_STORAGE = 'GET_TRANSACTION_FROM_STORAGE';
+export const GET_TRANSACTION_LIST = "GET_TRANSACTION_LIST";
+export const UPDATE_TRANSACTION_LIST = "UPDATE_TRANSACTION_LIST";
+
+
+// contact
+export const CREATE_CONTACT = 'CREATE_CONTACT';
+export const REMOVE_CONTACT = 'REMOVE_CONTACT';
+export const EDIT_CONTACT = 'EDIT_CONTACT';
+export const GET_CONTACT_FROM_STORAGE = 'GET_CONTACT_FROM_STORAGE';
+
+// pending
+export const PENDING_TOKEN_ADD = 'PENDING_TOKEN_ADD';

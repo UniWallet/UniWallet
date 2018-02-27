@@ -1,0 +1,306 @@
+{
+  /* create wallet */
+  "create_wallet":"创建钱包",
+  "import_wallet":"导入钱包",
+  "create_wallet_name":"钱包名称",
+  "create_wallet_passwd":"密码",
+  "create_wallet_passwd2":"重复密码",
+  "create_wallet_passwdtip":"密码提示信息（可不填）",
+  "create_wallet_button_create":"创建钱包",
+  "create_wallet_button_import":"导入钱包",
+  "create_wallet_name_warning":"钱包名称不能为空",
+  "create_wallet_pwd_warning":"密码长度必须大于8个字母",
+  "create_wallet_in_progress":"正在创建钱包...",
+
+  /* sidebar */
+  "sidebar_my_receipt_code":"收款码",
+  "sidebar_scan":"扫一扫",
+
+  /* scan */
+  "scan_title":"扫码",
+
+  /* wallet is created successfully */
+  "create_wallet_success_title":"创建成功",
+  "create_wallet_success":"新钱包创建成功",
+  "create_wallet_please_backup":"强烈建议你在使用钱包前做好备份",
+  "create_wallet_button_backup":"备份钱包",
+  "create_wallet_button_ignore":"立即进入",
+  "create_wallet_button_howtobackup":"如何备份钱包",
+  "how_to_backup_title":"备份钱包",
+
+  /* wallet backup */
+  "backup_wallet_name":"钱包名",
+  "backup_wallet_button_tokeystore":"备份keystore",
+  "backup":"备份",
+  "backup_hint":"请备份",
+  "backup_ok_hint":"备份成功",
+  "backup_fail_hint":"备份失败",
+  "keystore":"Keystore",
+  "hint_wallet_backup":"注意！UniWallet不存储用户密码，无法提供找回或者重置的功能，密码必须要自己备份好。密码用于加密保护私钥，强度非常重要。",
+  "hint_wallet_backup_after_create":"UniWallet强烈建议您在使用钱包之前先做好钱包备份，然后尝试使用小额资产转入。",
+  "backup_wallet_button_delete":"删除钱包",
+  "backup_wallet_password_wrong":"密码错误",
+  "wallet_name_already_exist":"钱包名已存在，请重新输入",
+
+  /* unlock */
+  "unlock_cache_off":"点击关闭密码缓存",
+  "unlock_cache_on":"点击打开密码缓存",
+  "unlock_input_password":"请输入密码",
+  "unlock_password_isempty":"密码不能为空",
+  "unlock_rpassword_isempty":"重复密码不能为空",
+  "different_pwd":"两次密码不一致",
+
+  /* assets */
+  "assets_total":"总资产",
+  "assets_tab_assets": "资产",
+  "assets_tab_market": "市场",
+  "assets_tab_find": "发现",
+  "assets_tab_me": "我",
+
+  /* new assets */
+  "newassets_title":"增加新资产",
+
+  /* assets_action */
+  "assets_action_transfer":"转帐",
+  "assets_action_receive":"收款",
+  "assets_action_receive_code":"收款码",
+  "assets_address_copy":"复制收款地址",
+  "wallet_address_copy":"复制钱包地址",
+  "assets_action_records":"最近交易记录",
+  "assets_address_mine":"我的收款地址",
+  "share":"分享",
+
+  /* assets transfer */
+  "assets_transfer_title":"转帐",
+  "assets_transfer_address":"收款人钱包地址",
+  "assets_transfer_amount":"转帐金额",
+  "assets_transfer_note":"备注（可不填）",
+  "assets_transfer_cost":"矿工费用",
+  "assets_transfer_speed_slow":"慢",
+  "assets_transfer_speed_fast":"快",
+  "assets_transfer_advance_options":"高级选项",
+  "assets_transfer_next_action":"下一步",
+  "assets_transfer_gasprice":"自定义Gas费用",
+  "assets_transfer_gaslimit":"自定义Gas",
+  "assets_transfer_data":"自定义十六进制数据",
+  "transfer_error_fail":"转帐失败",
+  "transfer_error_password_error":"密码错误",
+
+  /* assets qrcode */
+  "assets_qrcode_copy_ok":"复制成功",
+  "assets_qrcode_qrcode":"收款码",
+  "assets_qrcode_copy_address":"复制收款地址",
+
+  /* about us */
+  "about_us":"关于我们",
+  "protocol":"使用协议",
+  "privacy_policy":"隐私条款",
+  "version_log":"版本日志",
+  "new_version_check":"检测新版",
+  "app_introduction":"UniWallet是一款简单、安全和好用的移动端轻钱包，它能帮助管理各种数字资产，还能进行投资理财。",
+
+  /* version check */
+  "version_update":"升级到最新版本",
+  "update_now":"立即更新",
+  "update_later":"暂不更新",
+  "version_now":"当前版本",
+
+  /* report */
+  "hint_may_help_you":"有什么可以帮到您的吗？",
+  "report_problem":"报告问题",
+  "report_advice":"改进建议",
+
+  /* system settings */
+  "multilingual":"多语言",
+  "cn":"简体中文",
+  "en":"English",
+  "currency_unit":"货币单位",
+  "cny":"CNY",
+  "usd":"USD",
+  "web3_settings":"Web3设置",
+
+  /* messsage center */
+  "message_center":"消息中心",
+  "system_announcement":"系统公告",
+  "my_message":"我的消息",
+  "message_details":"消息详情",
+
+  /* my info */
+  "my_account":"我的账户",
+  "manage_wallet":"管理钱包",
+  "transaction_records":"交易记录",
+  "contact":"联系人",
+  "system_settings":"系统设置",
+  "help_center":"帮助中心",
+  "feed_back":"提交反馈",
+  "test_center":"测试中心",
+
+  /* Contact */
+  "create":"新建",
+  "del":"删除",
+  "change":"修改",
+  "phone_number":"手机号",
+  "wallet_address":"联系人钱包地址",
+  "email":"邮箱",
+  "extra":"备注",
+  "surname":"姓",
+  "name":"名",
+  "contact_created":"联系人创建成功",
+  "contact_changed":"联系人修改成功",
+  "hint_wallet_address_can_not_be_empty":"钱包地址不能为空",
+  "hint_name_can_not_be_empty":"名不能为空",
+  "hint_surname_can_not_be_empty":"姓不能为空",
+  "hint_no_contacts":"暂无联系人",
+  "hint_no_records":"暂无记录",
+
+  /*manage wallet*/
+  "official_wallet":"官方钱包",
+  "mnemonic_word":"助记词",
+  "private_key":"私钥",
+  "hint_private_key_can_not_be_empty":"私钥不能为空",
+  "import_wallet_ok":"导入钱包成功",
+  "import_start":"开始导入",
+  "keystore_content":"Keystore文本內容",
+  "keystore_key":"Keystore密码",
+  "hint_what_is_keystore":"什么是keystore？",
+  "hint_what_is_mnemonic_word":"什么是助记词？",
+  "hint_what_is_private_key":"什么是私钥？",
+  "hint_pwd":"密码提示信息（可不填）",
+  "hint_keystore_can_not_be_empty":"keystore内容不能为空",
+  "hint_mnemonic_word_split_by_space":"助记词，按空格分割",
+  "official_wallet_introduction":"直接复制粘贴以太坊官方钱包keystore文件內容至输出框,或者通过生成keystore内容的二维码,扫描录入",
+
+  /* Dialog */
+  "dialog_default_title":"温馨提示",
+  "dialog_default_content":"是否退出",
+  "dialog_default_leftbutton":"取消",
+  "dialog_default_rightbutton":"确定",
+
+  "save":"保存",
+  "delete":"删除",
+  "set_as_default_url":"恢复默认设置",
+
+  "wallet_name_prefix":"钱包-",
+  "wallet_generate_name_error":"找不到合适的钱包名字",
+
+  "wallet_import_loading":"正在导入钱包",
+  "wallet_export_loading":"正在导出钱包",
+  "wallet_delete_loading":"正在删除",
+  "wallet_create_loading":"正在创建",
+  "transaction_send_loading":"正在发送交易",
+
+  "cancel":"取消",
+  "ok":"确认",
+
+  //Transaction status
+  "transaction_status_pending":"等待打包",
+  "transaction_status_waiting_confirm":"等待确认",
+  "transaction_status_success":"成功",
+  "transaction_status_fail":"失败",
+  "transaction_status_unknown":"未知",
+  "transaction_status_fail_out_of_gas":"油费不足",
+  "transaction_status_fail_pending_timeout":"超时",
+
+  //Transaction time
+  "before_days":"天前",
+  "before_hours":"小时前",
+  "before_minutes":"分钟前",
+  "before_now":"刚刚",
+
+  //Error
+  "error_wrong_password":"密码错误",
+  "error_send_transaction":"发送交易失败",
+  "error_unknown":"未知",
+  "error_refresh":"刷新失败",
+  "error_callservice":"调用服务",
+  "error_open_message":"打开消息失败",
+  "error_open_message_exception":"打开消息失败",
+  "error_open_message_tool":"该消息暂时不支持查看",
+  "error_open_message_navigation":"消息打不开",
+  "error_open_message_data":"消息不存在或者格式不对",
+  "error_call_service_exception":"服务执行异常",
+  "error_call_service_invalid":"服务不存在",
+  "error_import_wallet_with_same_address":"钱包已经存在",
+
+  "pwd_hint":"不少于8位字符，建议混合大小字母、数字和特殊字符",
+  "pwd_weak":"弱",
+  "pwd_common":"一般",
+  "pwd_good":"好",
+  "pwd_very_good":"很好",
+  "pwd_prefect":"强",
+
+  "message_type_newtransaction":"收款通知",
+  "message_type_confirmtransaction":"转账通知",
+  "message_type_newtransaction_fail":"收款失败",
+  "message_type_confirmtransaction_fail":"转账失败",
+  "message_type_news":"新资讯",
+  "message_type_system":"系统消息",
+  "message_type_unknown":"未知",
+  "message_mark_all_read":"全部已读",
+
+  "notification_content_newtransaction":"收款成功",
+  "notification_content_confirmtransaction":"转账成功",
+  "receiver":"接收方",
+  "sender":"发送方",
+  "transfer_notice":"转账通知",
+  "receivables_notice":"收款通知",
+
+  "copy_url":"复制URL",
+  "timestamp":"交易时间",
+  "block_number":"区块",
+  "hash":"交易号",
+  "gas":"矿工费用",
+  "to":"收款方",
+  "from":"发款方",
+  "extra":"备注",
+
+  //main page
+  "agree_terms":"已阅读并同意",
+  "term_of_service":"服务及隐私条款",
+  "accept_terms":"您必须同意服务条款",
+  "scan_title":"扫一扫",
+
+  "gas_used":"矿工费用",
+  "tx_comment_default":"交易",
+
+  "invalid_wallet_name":"非法钱包名,只能是a-z,0-9,-,_,中文字符,长度４-12",
+  "invalid_num":"非法数字",
+  "invalid_transfer_num":"非法交易金额",
+  "invalid_address":"地址格式不对",
+  "invalid_transfer_to_self":"不能转账给自己",
+  "invalid_transfer_zero":"转账金额不能为负",
+  "invalid_phone":"非法手机号码",
+  "invalid_email":"非法邮箱地址",
+  "invalid_privatekey":"非法私钥",
+  "invalid_url":"非法网址",
+  "invalid_keystore":"keystore格式不对",
+
+  /* splash */
+  "network_error":"网络异常",
+  "network_fail_warning":"检查网络连接后重试",
+  "button_restart":"重试",
+  /* transaction confirm */
+  "confirm_pay_wallet":"付款钱包",
+  "confirm_to_address":"转入地址",
+  "confirm_amount":"金额",
+  "confirm_details":"订单信息",
+  "confirm_transfer":"转账",
+  "confirm_payment_details":"支付详情",
+
+  "balance_insufficient":"余额不够此次交易",
+  "release_watermark":"实网中,请小心操作",
+
+  /* backup dialog */
+  "backup_dialog_hint_title":"温馨提醒",
+  "backup_dialog_hint_content":"请确保已备份钱包至安全的地方，UniWallet不承担任何钱包丢失、被盗、忘记密码等产生的资产损失",
+  "backup_dialog_hint_confirm":"确定",
+  "transaction_details":"交易详情",
+   /*load trasaction*/
+  "loading":"正在加载...",
+  "load_all_done":"已加载全部",
+  "loading_failed":"加载失败，点击重试",
+
+  /* test */
+  "test_message":"消息测试"
+
+}

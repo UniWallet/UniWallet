@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">UniWallet</string>
+
+    <string name="splash_security">Security</string>
+    <string name="splash_speedy">Speedy</string>
+    <string name="splash_easy">UniWallet</string>
+    <string name="splash_website">YIYA.IO</string>
+</resources>

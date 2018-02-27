@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>UniWallet</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<style>
+    body {
+        background-color: #F4F4F4;
+        font-size: 14px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 18px;
+        margin: 0 0 0.8rem;
+    }
+
+    div {
+        line-height: 1.5;
+        margin: 0.5rem;
+        word-wrap: break-word;
+        style: "display:inline",
+    }
+
+    p {
+        word-wrap: break-word;
+        style: "display:inline",
+    }
+</style>
+<body>
+
+<body>
+
+<div>
+    <p>The Keystore is an encrypted version of your private key in JSON format. It is a fancy version of your private
+        key that is protected by a password of your choosing. When this Keystore is used in conjunction with a password
+        it has the private key. It is safer than the private key because you need a password to access it. When you are
+        creating your password make sure it is strong and not the same as your email, or other social media account
+        passwords. This should be a new password that has a mixture of punctuations, letters and numbers.</p>
+
+    <p>The Keystore on UniWallet is a string and not a JSON text file. If you want to import another wallet using a
+        Keyfile you need to open and view it in a text editor. Then, copy and paste that to UniWallet under 'Keystore.' Do
+        not alter any of the information in the text file.</p>
+    <p>Here is an example of what a Keystore looks like:</p>
+    <p>
+        {
+        "address": "4dacd41b0fd2c7ad3f02c74236871a3854016933",
+        "crypto": {
+        "cipher": "aes-128-ctr",
+        "ciphertext": "7f0cdb11c7210af3eea9f2832db567382db40c170d8c42f8c325da7ffcfa59d8",
+        "cipherparams": {
+        "iv": "1dc2322c7fbce5d27bd0516857cc9aa2"
+        },
+        "kdf": "scrypt",
+        "kdfparams": {
+        "dklen": 32,
+        "n": 262144,
+        "p": 1,
+        "r": 8,
+        "salt": "2990168875c53c448d668d0c93539d3e85278778c94cf6aa43a22fae63c7fd37"
+        },
+        "mac": "ff1ad03ad49ed336d66b240fc56b05647044dda6cbf186c00c692f3b9b317107"
+        },
+        "id": "0953cda8-5640-4c3b-b5b2-8ea511dd496f",
+        "version": 3
+        }
+    </p>
+
+    <p>Remember: Make sure you backup your Keystore regularly! If you remember your password you can backup your
+        Keystore again. UniWallet cannot reset your password or retrieve your keystore. The keystore is only on your
+        phone, you must keep it in a safe place outside of your phone. Make sure it is a place that only you can
+        access.</p>
+</div>
+</body>
+
+</body>
+</html>

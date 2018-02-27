@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UniWallet</title>
+    <style>
+        body{
+            background-color: #F4F4F4;
+            font-size: 14px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            margin: 0 0 0.8rem;
+        }
+        div {
+              line-height: 1.5;
+              word-wrap : break-word;
+              margin: 0.5rem;
+              style:"display:inline",
+          }
+        p{
+            style:"display:inline",
+        }
+    </style>
+</head>
+
+<body  >
+    <div >
+        <div>Every account is defined by a pair of keys: (1) a private key and (2) a public key. Each account has an
+            address that is derived from the public key by using the last 20 bytes of information. The private key is
+            the secret half of your address/public key. The private key consists of 64 hexadecimal characters that
+            should look like this: c906cbc4f8e037e1eaf03bd5c205aff0d4d9fb195c40e90968bd6ed51679a142. If you misspell any portion of the private key, you will be attempting to access a different wallet. Without your private key
+            you cannot access your funds.</div>
+
+        <div>The private key is an unencrypted private key, unlike the keystore which is encrypted. <strong>Anyone with
+            access to your private key can control your wallet.</strong> If you do not have your private key you do not
+            own your wallet. We advise you not keep your private key and simply use your mnemonic or keystore to keep
+            your wallet secure. Since the keystore and mnemonic are encrypted they are safer than the private key.
+            Remember: We do not save your password, once forgotten, it cannot be recovered.</div>
+    </div>
+
+</body>
+</html>

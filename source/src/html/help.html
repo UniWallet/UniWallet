@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () { $('#collapseOne').collapse('toggle')});
+        $(function () { $('#collapseTwo').collapse('toggle')});
+        $(function () { $('#collapseThree').collapse('toggle')});
+        $(function () { $('#collapseFour').collapse('toggle')});
+        $(function () { $('#collapseFive').collapse('toggle')});
+        $(function () { $('#collapseSix').collapse('toggle')});
+        $(function () { $('#collapseSeven').collapse('toggle')});
+    </script>
+    <style>
+        body{
+            padding: 0.8em;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseOne">
+                    How to import wallet?
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+                UniWallet supports keystore and private key importing right now. You can enter into "Me" page, then click "Manage Wallets", finally click "Import Wallet" button. After that you can follow the hint to finish importing.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseTwo">
+                    How to export wallet?
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                You can enter into "Me" page, then click "Manage Wallets", select one of wallet you want to export. Right now UniWallet only supports exporting wallet as keystore string.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseThree">
+                    How to add more tokens in asset list?
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                You can enter into "Assets" page, then click "+" button at the end of token list, finally switch on/off the corresponding token. ETH is the default added coin. And when a wallet receives any new token, it will be automatically added into the token list.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseFour">
+                    How to send and receive funds?
+                </a>
+            </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+                You can enter into "Assets" page, then click "+" button at the end of token list, finally switch on/off the corresponding token. ETH is the default added coin. And when a wallet receives any new token, it will be automatically added into the token list.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseFive">
+                    How to send and receive funds?
+                </a>
+            </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body">
+                You can enter into "Assets" page, then click "+" button at the end of token list, finally switch on/off the corresponding token. ETH is the default added coin. And when a wallet receives any new token, it will be automatically added into the token list.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseSix">
+                    Does it cost anything to send and receive funds?
+                </a>
+            </h4>
+        </div>
+        <div id="collapseSix" class="panel-collapse collapse">
+            <div class="panel-body">
+                UniWallet is completely free to download and use on all platforms. However, the blockchain networks that administer your funds will charge a small processing fee per transaction to ensure that the transaction goes smoothly and to reward miners. UniWallet itself takes no commision.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseSeven">
+                    Can I send a transaction if I don't have any ETH in my wallet?
+                </a>
+            </h4>
+        </div>
+        <div id="collapseSeven" class="panel-collapse collapse">
+            <div class="panel-body">
+                No, you cannot send any transaction in this situation. Because each transaction should reward miners with some gas fee on the blockchain networks. So if a transaction is failed to sent, the first thing you should check is that whether you have enough ETH to pay the gas fee.
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

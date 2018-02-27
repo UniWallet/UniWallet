@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.coinwallet"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>         <!-- for Device Name -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- used by baidu MTJ -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-sdk
+            android:minSdkVersion="16"
+            android:targetSdkVersion="22"/>
+
+    <!--todo:  android:screenOrientation="portrait" in order to fix screen splash bug by hard code-->
+    <application
+      android:name=".MainApplication"
+      android:allowBackup="true"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:theme="@style/AppTheme">
+      <meta-data
+                android:name="BaiduMobAd_STAT_ID"
+                android:value="636494f9ac" />
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+	    android:launchMode="singleTask"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|layoutDirection|locale"
+        android:windowSoftInputMode="adjustResize">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="${APP_CHANNEL}"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="${JPUSH_APPKEY}"/>
+
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <service android:name=".YiYaHeadlessTaskService"
+                 android:enabled="true"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">币无忧</string>
+
+    <string name="splash_security">安全</string>
+    <string name="splash_speedy">便捷</string>
+    <string name="splash_easy">币无忧</string>
+    <string name="splash_website">YIYA.IO</string>
+</resources>
