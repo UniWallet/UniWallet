@@ -4,6 +4,9 @@ import cl.json.RNSharePackage;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.tradle.react.UdpSocketsModule;
+import com.peel.react.TcpSocketsModule;
+import com.peel.react.rnos.RNOSModule;
 import com.jadsonlourenco.RNShakeEvent.RNShakeEventPackage;
 import com.instabug.reactlibrary.RNInstabugReactnativePackage;
 import com.masteratul.exceptionhandler.ReactNativeExceptionHandlerPackage;
@@ -44,6 +47,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new UdpSocketsModule(),
+            new TcpSocketsModule(),
+            new RNOSModule(),
             new RNShakeEventPackage(),
             		new RNInstabugReactnativePackage.Builder("b745dbcd4f028d48b070b48fffabe7ba",MainApplication.this)
 							.setInvocationEvent("none")
