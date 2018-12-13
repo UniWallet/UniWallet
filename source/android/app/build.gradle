@@ -91,8 +91,8 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
 
     dexOptions {
       jumboMode true
@@ -110,9 +110,14 @@ android {
     defaultConfig {
         applicationId "com.coinwallet"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0.0"
+        manifestPlaceholders = [
+                JPUSH_APPKEY: "",
+                APP_CHANNEL : "default"
+        ]
+
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -182,6 +187,10 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-cookie')
+    compile project(':react-native-background-fetch')
+    implementation project(':jcore-react-native')
+    implementation project(':jpush-react-native')
     compile project(':react-native-udp')
     compile project(':react-native-tcp')
     compile project(':react-native-os')
@@ -201,7 +210,7 @@ dependencies {
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile project(':jpush-react-native')
     compile project(':jcore-react-native')
-    compile "com.android.support:appcompat-v7:25.3.0"
+    compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
     compile project(':react-native-share')
     compile 'org.web3j:core-android:2.2.1'

@@ -1,4 +1,14 @@
 rootProject.name = 'CoinWallet'
+include ':react-native-cookie'
+project(':react-native-cookie').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-cookie/android')
+include ':react-native-background-fetch'
+project(':react-native-background-fetch').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-background-fetch/android')
+include ':jcore-react-native'
+project(':jcore-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/jcore-react-native/android')
+
+include ':jpush-react-native'
+project(':jpush-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/jpush-react-native/android')
+
 include ':react-native-udp'
 project(':react-native-udp').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-udp/android')
 include ':react-native-tcp'

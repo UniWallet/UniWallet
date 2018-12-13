@@ -117,6 +117,9 @@
 		CB4AF30EED884EA18AF4A19E /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FDE82E4BCD824A76B323B330 /* SF-UI-Text-Regular.otf */; };
 		A95202E1380D4CEB9A9CE489 /* Skia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDACB92329AB440BAB34B01E /* Skia.ttf */; };
 		5E5B7A3C2C804D96AB088021 /* Times New Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D27A5F2CD4FBE82C34AE9 /* Times New Roman.ttf */; };
+		8E086DB12A144C1F9D01D771 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16EB8FD44F344E088B7F7FA0 /* Feather.ttf */; };
+		4F074059C20E410590225C18 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C40AF12BC7842D69F15D988 /* MaterialCommunityIcons.ttf */; };
+		5F97A619FBB94643B8E97092 /* libRNCookieManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DFB8B4B59748E39DFFE3CD /* libRNCookieManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -508,6 +511,10 @@
 		FDE82E4BCD824A76B323B330 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; name = "SF-UI-Text-Regular.otf"; path = "../node_modules/native-base/Fonts/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		CDACB92329AB440BAB34B01E /* Skia.ttf */ = {isa = PBXFileReference; name = "Skia.ttf"; path = "../node_modules/native-base/Fonts/Skia.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		957D27A5F2CD4FBE82C34AE9 /* Times New Roman.ttf */ = {isa = PBXFileReference; name = "Times New Roman.ttf"; path = "../node_modules/native-base/Fonts/Times New Roman.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		16EB8FD44F344E088B7F7FA0 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1C40AF12BC7842D69F15D988 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D6DD87F274A1407F941DDF4D /* RNCookieManager.xcodeproj */ = {isa = PBXFileReference; name = "RNCookieManager.xcodeproj"; path = "../node_modules/react-native-cookie/ios/RNCookieManager.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		B5DFB8B4B59748E39DFFE3CD /* libRNCookieManager.a */ = {isa = PBXFileReference; name = "libRNCookieManager.a"; path = "libRNCookieManager.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -569,6 +576,7 @@
 				47EC6CE9AA9E4C16A91B2E61 /* libReactNativeExceptionHandler.a in Frameworks */,
 				DC70CD992AC44CA1A615ADEF /* libRNInstabug.a in Frameworks */,
 				9E4A4F82C3514C4E8613EA49 /* libRNShakeEvent.a in Frameworks */,
+				5F97A619FBB94643B8E97092 /* libRNCookieManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +784,7 @@
 				330E5BA41F3543FC8CD3EDDB /* ReactNativeExceptionHandler.xcodeproj */,
 				1148CB681850416FB52FA8AC /* RNInstabug.xcodeproj */,
 				908A75696EEC4EB49ECCE0B8 /* RNShakeEvent.xcodeproj */,
+				D6DD87F274A1407F941DDF4D /* RNCookieManager.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -865,6 +874,8 @@
 				FDE82E4BCD824A76B323B330 /* SF-UI-Text-Regular.otf */,
 				CDACB92329AB440BAB34B01E /* Skia.ttf */,
 				957D27A5F2CD4FBE82C34AE9 /* Times New Roman.ttf */,
+				16EB8FD44F344E088B7F7FA0 /* Feather.ttf */,
+				1C40AF12BC7842D69F15D988 /* MaterialCommunityIcons.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1450,6 +1461,8 @@
 				CB4AF30EED884EA18AF4A19E /* SF-UI-Text-Regular.otf in Resources */,
 				A95202E1380D4CEB9A9CE489 /* Skia.ttf in Resources */,
 				5E5B7A3C2C804D96AB088021 /* Times New Roman.ttf in Resources */,
+				8E086DB12A144C1F9D01D771 /* Feather.ttf in Resources */,
+				4F074059C20E410590225C18 /* MaterialCommunityIcons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1595,12 +1608,14 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookie/ios",
 				);
 				INFOPLIST_FILE = CoinWalletTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1662,12 +1677,14 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookie/ios",
 				);
 				INFOPLIST_FILE = CoinWalletTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1731,6 +1748,7 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookie/ios",
 				);
 				INFOPLIST_FILE = CoinWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1776,6 +1794,7 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookie/ios",
 				);
 				INFOPLIST_FILE = CoinWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1827,11 +1846,13 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookie/ios",
 				);
 				INFOPLIST_FILE = "CoinWallet-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1903,11 +1924,13 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookie/ios",
 				);
 				INFOPLIST_FILE = "CoinWallet-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1981,6 +2004,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.CoinWallet-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2005,6 +2029,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
