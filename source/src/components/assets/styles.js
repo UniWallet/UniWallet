@@ -107,7 +107,8 @@ export default {
     card: {
         marginTop:0,
         marginBottom: 12,
-        elevation:8
+        elevation:12,
+        width: '100%'
     },
     carditem: {
 

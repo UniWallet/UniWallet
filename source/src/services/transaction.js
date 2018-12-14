@@ -81,17 +81,7 @@ export function getBlockInfo(block) {
 }
 
 export function getBalanceByAddress(address) {
-    Log.log("transactionService.getBalanceByAddress($address) from hack add" + "0x82fdd7ddc38415b44945224624223a289aea853e")
-    var balance
-    web3.eth.getBalance("0xedac2dfcfe06f30920219221eccc79a300a8d7e1", function (error, result) {
-        if (!error) {
-            console.log(result);
-            return web3.fromWei(result, "ether");
-        } else {
-            console.error(error);
-        }
-    });
-    // return web3.eth.getBalance("0xedac2dfcfe06f30920219221eccc79a300a8d7e1")
+    return web3.eth.getBalance(address)
 }
 
 export async function getTransactionList(address, count= 40, offset=0,token = null) {

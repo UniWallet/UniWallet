@@ -128,10 +128,7 @@ export const addToken = createAction(types.TOKEN_ADD, async ({address, token_add
 
 
 export const getBalance = createAction(types.GET_BANLANCE, async ({address})=> {
-    Log.log("transactionService.getBalanceByAddress(" + address + ")")
     var balance = await transactionService.getBalanceByAddress(address);
-    Log.log("transactionService.getBalanceByAddress(" + address + ") returns" + balance)
-    balance = 50000000000000000000
     return {
         address: address,
         balance: balance

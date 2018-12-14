@@ -263,7 +263,7 @@ class signTransaction implements Runnable {
 	final String to;
 	final BigInteger value;
 	final String data;
-	final byte chainId;
+	final Byte chainId;
 	final String privateKey;
 	final Promise promise;
 
@@ -274,7 +274,7 @@ class signTransaction implements Runnable {
 	    to = t;
 	    value = new BigInteger(v);
 	    data = d;
-	    chainId = Byte.valueOf(cd);
+	    chainId = (byte)(Integer.parseInt(cd));
 	    privateKey = py;
 		promise = pr;
 	}
