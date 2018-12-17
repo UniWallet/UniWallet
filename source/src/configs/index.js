@@ -4,9 +4,10 @@ const baseConfig = {
 
 const devConfig = {
     release:false,
-    apiUrl: 'http://10.0.2.2:8080',
-    web3Url: 'http://10.0.2.2:8545',
-    // web3Url: 'http://47.101.146.248:8545',
+    // apiUrl: 'http://10.0.2.2:8080',
+    // web3Url: 'http://10.0.2.2:8545',
+    apiUrl: 'http://47.101.146.248:8080',
+    web3Url: 'http://47.101.146.248:8545',
     // web3Url: 'https://ropsten.infura.io/v3/c31352ced1014fb09d29b7f5d3c94fb3',
     exploreUrl:'https://ropsten.etherscan.io/tx/',
 };

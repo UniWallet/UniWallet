@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>         <!-- for Device Name -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
 
     <!-- used by baidu MTJ -->
     <uses-permission android:name="android.permission.INTERNET" />
