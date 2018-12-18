@@ -20,7 +20,8 @@ import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.bitgo.randombytes.RandomBytesPackage;
 import com.github.yamill.orientation.OrientationPackage;
 import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
-import com.lwansbrough.RCTCamera.RCTCameraPackage;
+// import com.lwansbrough.RCTCamera.RCTCameraPackage;
+import org.reactnative.camera.RNCameraPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -72,7 +73,7 @@ public class MainApplication extends Application implements ReactApplication {
             new AppBootMonitorPackage(),
             new JPushPackage(SHUTDOWN_TOAST, SHUTDOWN_LOG),
             new RNI18nPackage(),
-            new RCTCameraPackage(),
+            new RNCameraPackage(),
             new VectorIconsPackage(),
             new RNSharePackage(),
             new YiYaNativePackage()
