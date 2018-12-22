@@ -134,6 +134,7 @@ export const getBalance = createAction(types.GET_BANLANCE, async ({address})=> {
         balance: balance
     };
 }, ({address, type, resolved, rejected, loading})=> {
+    Log.log("WHAT??" + resolved + "," + rejected)
     return {
         loading,
         sync: 'wallet',

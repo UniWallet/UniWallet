@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>         <!-- for Device Name -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
 
     <!-- used by baidu MTJ -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -49,6 +51,13 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+    <meta-data
+        android:name="JPUSH_APPKEY"
+        android:value="${JPUSH_APPKEY}" />
+    <meta-data
+        android:name="JPUSH_CHANNEL"
+        android:value="${APP_CHANNEL}" />
+
         <meta-data android:name="JPUSH_CHANNEL" android:value="${APP_CHANNEL}"/>
         <meta-data android:name="JPUSH_APPKEY" android:value="${JPUSH_APPKEY}"/>
 

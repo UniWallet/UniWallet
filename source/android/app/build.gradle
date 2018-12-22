@@ -110,9 +110,14 @@ android {
     defaultConfig {
         applicationId "com.coinwallet"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0.0"
+        manifestPlaceholders = [
+                JPUSH_APPKEY: "",
+                APP_CHANNEL : "default"
+        ]
+
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -182,6 +187,13 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-cookie')
+    compile project(':react-native-background-fetch')
+    implementation project(':jcore-react-native')
+    implementation project(':jpush-react-native')
+    compile project(':react-native-udp')
+    compile project(':react-native-tcp')
+    compile project(':react-native-os')
     compile project(':react-native-shake-event')
     compile project(':instabug-reactnative')
     compile project(':react-native-exception-handler')
@@ -193,7 +205,13 @@ dependencies {
     compile project(':react-native-randombytes')
     compile project(':react-native-orientation')
     compile project(':react-native-i18n')
-    compile project(':react-native-camera')
+    compile (project(':react-native-camera')) {
+        exclude group: "com.google.android.gms"
+        compile 'com.android.support:exifinterface:25.+'
+        compile ('com.google.android.gms:play-services-vision:12.0.1') {
+            force = true
+        }
+    }
     compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile project(':jpush-react-native')

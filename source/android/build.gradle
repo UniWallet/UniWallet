@@ -3,10 +3,13 @@
 buildscript {
     repositories {
         jcenter()
+	mavenCentral()
+        maven {
+            url 'https://maven.google.com'
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
-
+        classpath 'com.android.tools.build:gradle:3.1.0'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -17,8 +20,33 @@ allprojects {
         mavenLocal()
         jcenter()
         maven {
+            url 'https://maven.google.com'
+        }
+        maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
         }
+	maven { url "$rootDir/../node_modules/react-native-background-fetch/android/libs" }
     }
 }
+
+subprojects {
+    project.configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'com.android.support'
+                    && !details.requested.name.contains('multidex') ) {
+                details.useVersion "27.0.1"
+            }
+        }
+    }
+
+afterEvaluate { 
+        project -> if (project.hasProperty("android")) { 
+            android { 
+               compileSdkVersion 27
+               buildToolsVersion '27.0.1'
+            } 
+        } 
+    }
+}
+

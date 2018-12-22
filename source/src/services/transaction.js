@@ -5,6 +5,7 @@ import * as etherutils from "../libs/etherutils"
 import config from '../configs';
 import * as request from './request'
 import {getWeb3url} from "../libs/web3";
+import { rejects } from "assert";
 
 export async function processTx(txSigned) {
     //web3.eth.sendSignedTransaction will call getTransactionReceipt loop every 1s, eat much cpu
@@ -80,7 +81,7 @@ export function getBlockInfo(block) {
 }
 
 export function getBalanceByAddress(address) {
-    return web3.eth.getBalance(address);
+    return web3.eth.getBalance(address)
 }
 
 export async function getTransactionList(address, count= 40, offset=0,token = null) {

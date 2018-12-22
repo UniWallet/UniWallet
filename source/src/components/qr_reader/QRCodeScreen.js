@@ -19,7 +19,8 @@ import {
     Form, Item, Input,
     Switch} from 'native-base';
 
-import Camera from 'react-native-camera';
+// import Camera from 'react-native-camera';
+import RNCamera  from 'react-native-camera'
 import MyHeader from "../common/MyHeader"
 import getString from "../../translations/index";
 
@@ -39,11 +40,11 @@ export default class QRCodeScreen extends Component {
               <MyHeader titleName={getString("scan_title")}
                         {...this.props}
               />
-                <Camera onBarCodeRead={this._onBarCodeRead.bind(this)} style={styles.camera}>
+                <RNCamera onBarCodeRead={this._onBarCodeRead.bind(this)} style={styles.camera}>
                 <View style={styles.rectangleContainer}>
                     <View style={styles.rectangle}/>
                 </View>
-                </Camera>
+                </RNCamera>
             </Container>
         );
     }

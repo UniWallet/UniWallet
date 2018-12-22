@@ -42,7 +42,7 @@ var NativeAPI = require('react-native').NativeModules.YiYaNativeAPI;
 
 export default class Assets_cointransfer extends Component {
     isETH() {
-        var isETH = this.state.tansfer_type === "ETH"? true:false;
+        var isETH = this.state.tansfer_type === "DORA"? true:false;
         return isETH;
     }
 
